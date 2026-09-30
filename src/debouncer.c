@@ -32,5 +32,11 @@ void debouncer_update(Debouncer *d, uint8_t raw_input) {
   void debouncer_set_active_low(Debouncer *d, uint8_t enable){
     if(d==NULL) return;
     d->active_low=enable?1:0;
-
+}
+void debouncer_reset(Debouncer *d){
+        if (d == NULL) return;
+    d->shift_reg = 0x0000;
+    d->state = 0;
+    d->rising_edge = 0;
+    d->falling_edge = 0;
 }
