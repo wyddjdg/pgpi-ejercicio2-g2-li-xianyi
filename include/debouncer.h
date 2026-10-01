@@ -11,7 +11,6 @@ typedef struct {
     uint8_t falling_edge;
     uint8_t active_low;
 uint8_t reserved;
-uint8_t ERROR_FIELD;
 } Debouncer;
 
 void debouncer_init(Debouncer *d);
