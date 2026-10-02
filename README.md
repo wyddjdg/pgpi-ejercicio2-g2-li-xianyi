@@ -7,3 +7,5 @@ Proyecto base para la práctica de Git Avanzado en C (Linux).
 make clean
 make
 ./test_debouncer
+
+## Version 1.0.1 -correccion de errata.
